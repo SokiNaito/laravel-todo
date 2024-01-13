@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\TodoItem;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class TodoController extends Controller
 {
-  /**
+    /**
      * TodoControllerの認証を有効にする
      * middleware('auth')を指定することで、認証が必要なコントローラーになる
      */
